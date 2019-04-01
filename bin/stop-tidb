@@ -1,0 +1,4 @@
+pkill -9 pd-server
+pkill -9 tikv-server
+pkill -9 tidb-server
+rm -rf $PROJECTS/data/*

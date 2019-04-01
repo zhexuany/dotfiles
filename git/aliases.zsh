@@ -38,8 +38,6 @@ function work_in_progress() {
 # (sorted alphabetically)
 #
 
-alias g='git'
-
 alias ga='git add'
 alias gaa='git add --all'
 alias gapa='git add --patch'

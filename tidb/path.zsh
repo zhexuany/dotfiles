@@ -1,0 +1,6 @@
+export PD_CONFIG="--data-dir=$PROJECTS/data/pd0 -log-file=$PROJECTS/data/pd.log"
+export TIKV_CONFIG="--data-dir=$PROJECTS/data/tikv0 --pd=127.0.0.1:2379 -f=$PROJECTS/data/tikv.log"
+export TIDB_CONFIG="--store=tikv --path=127.0.0.1:2379 -log-file=$PROJECTS/data/tidb.log"
+export TIDB_BIN="$GOPATH/src/github.com/pingcap/tidb/bin/tidb-server"
+export PD_BIN="$GOPATH/src/github.com/pingcap/pd/bin/pd-server"
+export TIKV_BIN="$PROJECTS/rust/tikv/bin/tikv-server"

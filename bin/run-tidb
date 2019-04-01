@@ -1,0 +1,8 @@
+echo "starting pd"
+nohup $PD_BIN $PD_CONFIG &
+sleep 10
+echo "starting tikv"
+nohup $TIKV_BIN $TIKV_CONFIG &
+sleep 20
+echo "starting tidb"
+nohup $TIDB_BIN $TIDB_CONFIG &
